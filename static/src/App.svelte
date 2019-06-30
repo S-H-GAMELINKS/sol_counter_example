@@ -1,7 +1,15 @@
 <script>
-    let word = "Hello World!"
+    let num = 0
+
+    let count = () => {
+        num += 1
+    }
 </script>
 
-<div data-controller="hello">
-    <h1>{ word }</h1>
-</div>
+<h1>Counter Sapmle</h1>
+
+<p>Num is {num}</p> 
+
+<button on:click={count}>
+    Count
+</button>
